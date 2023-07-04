@@ -4,11 +4,16 @@ const MyContext = React.createContext();
 class MyProvider extends Component {
 
     state = {
-        screen: 0
+        screen: 0,
+        question: ''
     }
 
     handleGoTo = (value) => {
         this.setState({ screen: value })
+    }
+
+    handleQuestion = (value) => {
+        this.setState({ question: value })
     }
 
     render() {
@@ -16,7 +21,8 @@ class MyProvider extends Component {
             <>
                 <MyContext.Provider value={{
                     state: this.state,
-                    goTo: this.handleGoTo
+                    goTo: this.handleGoTo,
+                    question: this.handleQuestion
                 }}
                 >
                     {this.props.children}
