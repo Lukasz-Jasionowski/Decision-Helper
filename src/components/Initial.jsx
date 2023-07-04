@@ -22,6 +22,7 @@ const Initial = () => {
         }
 
         context.goTo(1);
+        context.question(value);
     }
 
     return (
