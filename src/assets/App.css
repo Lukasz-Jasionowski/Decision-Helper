@@ -75,6 +75,31 @@ h3 {
   font-weight: 100;
 }
 
+.error {
+  color: var(--sienna);
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.fade-exit-active {
+  transition: 0.5s;
+  opacity: 0;
+}
+
 @media only screen and (max-width: 600px) {
 
   h1,
