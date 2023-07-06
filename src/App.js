@@ -2,6 +2,8 @@ import React from 'react';
 import { useContext } from 'react';
 import { MyContext } from './context';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
 import './assets/App.css';
 import Initial from './components/Initial';
@@ -34,6 +36,7 @@ const App = () => {
           </CSSTransition>
         </SwitchTransition>
       </div>
+      <ToastContainer />
     </div>
   );
 }
